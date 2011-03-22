@@ -1,0 +1,27 @@
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/tableLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+       <TableRow> <TextView android:text="Img" android:textSize="14px" android:paddingLeft="5px"></TextView>
+       <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Instrumento" android:gravity="center"></TextView>
+       <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cant" android:gravity="center"></TextView>
+       <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tiempo" android:gravity="center"></TextView>
+       </TableRow>
+       
+        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1"></ImageView>
+            <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20px" android:text="Bateria" android:width="200dp" android:paddingLeft="50px"></TextView>
+            <EditText android:height="30px" android:maxHeight="30px" android:maxLines="1" android:layout_height="fill_parent" android:id="@+id/editText1" android:text="1" android:layout_width="match_parent"></EditText>
+            <EditText android:layout_height="match_parent" android:id="@+id/editText2" android:text="4" android:layout_width="wrap_content" android:layout_marginLeft="20px"></EditText>
+        </TableRow>
+           <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1"></ImageView>
+            <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20px" android:text="Guitarra1" android:width="200dp" android:paddingLeft="50px"></TextView>
+            <EditText android:height="30px" android:maxHeight="30px" android:maxLines="1" android:layout_height="fill_parent" android:id="@+id/editText1" android:text="1" android:layout_width="match_parent"></EditText>
+            <EditText android:layout_height="match_parent" android:id="@+id/editText2" android:text="4" android:layout_width="wrap_content" android:layout_marginLeft="20px"></EditText>
+        </TableRow>
+           <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1"></ImageView>
+            <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20px" android:text="Guitarra2" android:width="200dp" android:paddingLeft="50px"></TextView>
+            <EditText android:height="30px" android:maxHeight="30px" android:maxLines="1" android:layout_height="fill_parent" android:id="@+id/editText1" android:text="1" android:layout_width="match_parent"></EditText>
+            <EditText android:layout_height="match_parent" android:id="@+id/editText2" android:text="4" android:layout_width="wrap_content" android:layout_marginLeft="20px"></EditText>
+        </TableRow>
+    </TableLayout>
