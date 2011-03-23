@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Layout;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
@@ -17,13 +19,26 @@ import android.widget.TextView;
 
 public class SmartBand extends Activity {
     /** Called when the activity is first created. */
+	private Button backB ;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       
         setContentView(R.layout.main);
-        createTable(10,20);
+        this.backB = (Button)findViewById(R.id.back);
+        this.backB.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				setContentView(R.layout.add);
+				
+			}
+        	
+        	
+        });
        
+        
+        createTable(1000,6);
+        
         }  
         //
     
@@ -43,21 +58,23 @@ public class SmartBand extends Activity {
     		for(int j=0;j < cols;j++){
     			TableRow.LayoutParams rowLayout = new  TableRow.LayoutParams(
                         								TableRow.LayoutParams.FILL_PARENT,
-                        								TableRow.LayoutParams.FILL_PARENT);
-    			rowLayout.width=50;
-    			rowLayout.setMargins(3, 2, 3, 2);
+                        								TableRow.LayoutParams.WRAP_CONTENT);
+    			rowLayout.width=30;
+    			rowLayout.height=30;
+    			rowLayout.setMargins(2, 2, 2, 2);
     			TextView td = new TextView(this);
     			td.setId(cont);
     			td.setWidth(50);
     			
     			td.setLayoutParams(rowLayout);
-    			td.getLayoutParams().width=30;
+    			td.getLayoutParams().width=20;
     			
     			//td.setLayoutParams(tableRowParams);
     			td.setBackgroundColor(Color.parseColor("#000000"));
     			cont++;
     			//td.invalidate();
     			//
+    			td.setOnClickListener(myClickListener);
     			tr.addView(td);
     			//tr.invalidate();
     			
@@ -69,4 +86,12 @@ public class SmartBand extends Activity {
     	
     	
     }
+    OnClickListener myClickListener = new OnClickListener() {
+		public void onClick(View v) {
+			v.setBackgroundColor(Color.parseColor("#636363"));
+		}
+	};
+    	
+    	
+    
 }
